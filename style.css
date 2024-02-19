@@ -25,9 +25,10 @@
 
 
 footer{
-    color: rgb(104, 104, 103);
-    
+    color: rgba(121, 121, 117, 0.673);
+    background-color: #6060e148;
     margin-top: auto;
+    padding: 30px;
 }
 
 .home-btn{
@@ -43,11 +44,41 @@ footer{
     font-family: "Roboto Mono";
     font-weight: 400;
 }
+
+#GameMode{
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    color: var(--main-color);
+
+}
+
+.scoreboard{
+    border-color: var(--main-color);
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+
 /* Hover functionality Section*/
 .navbar-brand:hover{
     color: #5050a9;
 }
 
-.home-btn:hover{
+.home-btn:hover {
     background-color: #5050a9;
+    box-shadow: 1px 3px 20px 3px #3d3d95;
+}
+
+/* Screen size adjustment*/
+
+@media (max-width: 1490px ) {
+    .brand-main-screen{
+        font-size: 50px;
+    }
+
+    .scoreboard{
+        border-width: 5px;
+        font-size: 100%;
+    }
 }
