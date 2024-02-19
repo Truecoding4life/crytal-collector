@@ -1,4 +1,53 @@
-* {
-    border-width: 3px;
-    border-style: dotted;
+:root {
+    --main-color: #845edde0;
+}
+
+
+.main{
+    background-color: black;
+    
+   
+}
+
+
+.navbar-brand {
+    font-family: 'Roboto Serif', serif; /* Override font-family for navbar-brand */
+    color: var(--main-color);
+    margin-top: 60px;
+    font-weight: 900;
+}
+
+
+.brand-main-screen{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+
+footer{
+    color: rgb(104, 104, 103);
+    
+    margin-top: auto;
+}
+
+.home-btn{
+    background-color: none;
+    color: var(--main-color);
+    border-style: solid;
+    border-color: var(--main-color);
+    padding: 30px;
+}
+
+.home-btn-group{
+    padding-top: 100px;
+    font-family: "Roboto Mono";
+    font-weight: 400;
+}
+/* Hover functionality Section*/
+.navbar-brand:hover{
+    color: #5050a9;
+}
+
+.home-btn:hover{
+    background-color: #5050a9;
 }

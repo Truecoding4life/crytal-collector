@@ -5,7 +5,7 @@
 [Checkout JStudio](https://jstudio-1f20c4b56dff.herokuapp.com/)
 
 ## Description
-Welcome Come to Crystal Collector, in this game user goal is to match the score given by picking a random crystal, User will enjoy the fun of the game by trying the luck with computer 
+Welcome to Crystal Collector! In this engaging game, your objective is to match the given score by selecting a random crystal. Experience the thrill of testing your luck against the computer, adding an element of excitement and fun to your gaming experience. Enjoy the challenge and see if you can beat the odds in Crystal Collector!
 
 ---
 
