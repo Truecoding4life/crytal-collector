@@ -62,6 +62,13 @@ footer{
     color: var(--main-color);
     transition: 1s;
 }
+
+.card-score{
+    color: red;
+    font-size: 200%;
+    font-weight: 900;
+
+}
 /* Hover functionality Section*/
 .navbar-brand:hover{
     color: #5050a9;
@@ -73,7 +80,7 @@ footer{
 }
 
 .card:hover {
-    color: #e70d0d;
+    color: #7d0feb;
     font-size: 120%;
     transform: scale(1.1);
 }

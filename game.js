@@ -3,6 +3,8 @@ let star2Value;
 let star3Value;
 let star4Value;
 let scoreCounter = 0;
+let winCounter = 0;
+let loseCounter = 0;
 
 $('#start').on('click', ()=>{
     console.log('Clicked')
@@ -13,14 +15,13 @@ $('#start').on('click', ()=>{
 const getRandom = (num)=> {
     return Math.floor(Math.random()*num)
 };
-
+const getTargetScore = getRandom(40) + 20;
 $('#star1').html( star1Value || '???');
 $('#star2').html( star2Value || '???');
 $('#star3').html( star3Value || '???');
 $('#star4').html( star4Value || '???');
 
 $(document).ready(function(){
-    const getTargetScore = getRandom(40);
     $('#target').html(getTargetScore)
     
 });
@@ -28,9 +29,42 @@ $(document).ready(function(){
 
 $('.card').on('click', function (){
     const cardScore = $(this).find('.card-score');
-    const getScore = getRandom(20)
+    const getScore = getRandom(10)
     cardScore.html(getScore);
     scoreCounter+=getScore;
     $('#score').html(scoreCounter);
+    if(getTargetScore === scoreCounter){
+    userWon()
+} 
+
+if (getTargetScore < scoreCounter){
+    userLost()
+}
 
 });
+
+
+
+
+function userWon(){
+    winCounter+=1;
+    $('#win').html(winCounter)
+    reset()
+  
+};
+
+function userLost(){
+    
+
+    loseCounter +=1;
+    $('#lose').html(loseCounter)
+    reset()
+   
+}
+
+function reset (){
+    let newTargetScore = getRandom(40)
+    $('#target').html(newTargetScore)
+    scoreCounter = 0;
+    $('#score').html(scoreCounter)
+}
