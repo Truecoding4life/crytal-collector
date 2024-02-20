@@ -31,7 +31,8 @@ $(".card").on("click", function () {
   cardScore.html(getScore);
   scoreCounter += getScore;
   $("#score").html(scoreCounter);
-if (getTargetScore < scoreCounter || newTargetScore < scoreCounter) {
+  const targetScore = $('#target').text()
+if (targetScore < scoreCounter ) {
     userLost();
     reset()
   }
