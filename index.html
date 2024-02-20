@@ -4,71 +4,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <title>Crystal Game </title>
+    <title>Crystal Quest</title>
 </head>
 
-<body class="main">
+<body class="main" style="display: flex; flex-direction: column; min-height: 100vh;">
 
     <header>
         <div class="container-fluid">
-            <div class="navbar d-flex ">
-                <div class="navbar-brand text-center mx-auto" ">
-                    <h1 class=" brand-main-screen"> Crystal Collector</h1>
+            <div class="navbar d-flex">
+                <div class="navbar-brand text-center mx-auto">
+                    <h1 class="brand-main-screen">Crystal Quest</h1>
                 </div>
             </div>
         </div>
     </header>
-    <main>
-        <div class="container" style="min-height: 700px;">
-            <!-- <div id="WelcomeMode">
-                <div class="col-12  text-center home-btn-group">
+
+    <main style="flex: 1;">
+        <div class="container">
+            <div id="WelcomeMode">
+                <div class="col-12 text-center home-btn-group">
                     <div class="col-12 p-3">
                         <button type="button" id="start" class="btn home-btn col-4">Get Started</button>
                     </div>
                     <div class="col-12 p-3">
-                        <button type="button" id="instruction" class="btn home-btn col-4"> Instruction </button>
+                        <button type="button" id="instruction" class="btn home-btn col-4">Instruction</button>
                     </div>
                     <div class="col-12 p-3">
-                        <button type="button" id="about" class="btn home-btn  col-4"> About Us </button>
-                    </div>
-                </div>
-            </div> -->
-            <div class="container justify-content-center" style="min-height: 700px; margin-top: 30px;">
-                <div id="GameMode">
-                    <div class="row text-center scoreboard">
-                        <div class="col-12 col-sm-6">
-                      
-                                <h4 class="p-3"> Score </h4>
-                                <p> 20 </p>
-                        
-                            
-                        </div>
-                        <div class="col-12 col-sm-6">
-                           
-                                <h4 class="p-3"> Target Score </h4>
-                                <p> 30 </p>
-                           
-                            
-                        </div>
+                        <button type="button" id="about" class="btn home-btn col-4">About Us</button>
                     </div>
                 </div>
             </div>
 
+            <div class="container justify-content-center" id="GameMode" style="min-height: 700px; margin-top: 30px;" hidden >
+                <div class="row text-center scoreboard">
+                    <div class="col-12 col-sm-3">
+                        <h4 class="p-3">Score</h4>
+                        <p>0</p>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <h4 class="p-3">Target Score</h4>
+                        <p>0</p>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <h4 class="p-3">Win</h4>
+                        <p>0</p>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <h4 class="p-3">Lose</h4>
+                        <p>0</p>
+                    </div>
+                </div>
+                <div class="row text-center p-5">
+                    <div class="col-12 col-sm-12">
+                        <h4 class="p-3">  Pick a Crystal </h4>
+                        
+                    </div>
+                    
+                </div>
+                <div class="row text-center scoreboard">
+
+                    <div class="col-12 col-sm-3">
+                        <div class="card p-4 " style="width: 16.5rem; background-color: transparent;">
+                            <img src="/assets/star/_9919eb98-4dd9-4bf8-8d08-42878b788966 Background Removed.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title"> Larimar </h5>
+                              <p class="card-text">Score ??? </p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <div class="card p-4 " style="width: 17rem; background-color: transparent;">
+                            <img src="/assets/star/_057c92d0-41bb-463b-80ac-cd5e9530dc09 Background Removed.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Kyanite</h5>
+                              <p class="card-text">Score ??? </p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <div class="card p-4 " style="width: 18rem; background-color: transparent;">
+                            <img src="/assets/star/_49862b52-9c58-4071-9ad8-370a9b483157 Background Removed.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Kryptonite</h5>
+                              <p class="card-text">Score ??? </p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <div class="card p-4 " style="width: 18rem; background-color: transparent;">
+                            <img src="/assets/star/_7021ca78-fc71-450e-b4b8-3a28ce9ac11e Background Removed.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Amethyst</h5>
+                              <p class="card-text">Score ??? </p>
+                              
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container-fluid">
-            <h5> Design By JStudio</h5>
-            <h5> EST 2024, From California </h5>
+            <h5>Design By JStudio</h5>
+            <h5>EST 2024, From California</h5>
         </div>
     </footer>
 

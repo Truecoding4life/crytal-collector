@@ -27,7 +27,6 @@
 footer{
     color: rgba(121, 121, 117, 0.673);
     background-color: #6060e148;
-    margin-top: auto;
     padding: 30px;
 }
 
@@ -59,7 +58,10 @@ footer{
     border-radius: 20px;
 }
 
-
+.card{
+    color: var(--main-color);
+    transition: 1s;
+}
 /* Hover functionality Section*/
 .navbar-brand:hover{
     color: #5050a9;
@@ -70,6 +72,11 @@ footer{
     box-shadow: 1px 3px 20px 3px #3d3d95;
 }
 
+.card:hover {
+    color: #e70d0d;
+    font-size: 120%;
+    transform: scale(1.1);
+}
 /* Screen size adjustment*/
 
 @media (max-width: 1490px ) {
