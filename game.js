@@ -16,10 +16,10 @@ const getRandom = (num) => {
   return Math.floor(Math.random() * num);
 };
 const getTargetScore = getRandom(40) + 20;
-$("#star1").html(star1Value || "???");
-$("#star2").html(star2Value || "???");
-$("#star3").html(star3Value || "???");
-$("#star4").html(star4Value || "???");
+$("#star1").html(star1Value || "??");
+$("#star2").html(star2Value || "??");
+$("#star3").html(star3Value || "??");
+$("#star4").html(star4Value || "??");
 
 $(document).ready(function () {
   $("#target").html(getTargetScore);
