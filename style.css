@@ -1,10 +1,10 @@
 :root {
-    --main-color: #845edde0;
+    --main-color: rgba(114, 56, 185, 0.973);
 }
 
 
 .main{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 ;
    
 }
@@ -18,15 +18,29 @@
 }
 
 
+
 .brand-main-screen{
     font-size: 80px;
     font-weight: 700;
 }
 
+#score-display{
+    font-size: 150%;
+    font-weight: 900;
+   color:#f1d05c
+}
 
+#lose-display{
+    color: #eb4455;
+}
+
+#win-display{
+    color: #3ae09e;
+
+}
 footer{
-    color: rgba(121, 121, 117, 0.673);
-    background-color: #6060e148;
+    color: rgba(124, 132, 224, 0.78);
+    background-color: #101042de;
     padding: 30px;
 }
 
@@ -53,39 +67,63 @@ footer{
 
 .scoreboard{
     border-color: var(--main-color);
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 50px;
+    border-bottom: 5px solid var(--main-color);
+    color: rgb(136, 131, 212);
+
 }
 
 .card{
     color: var(--main-color);
     transition: 1s;
+    border-radius: 20px;
+    border: 5px solid var(--main-color);
+    box-shadow: 0 0 10px 5px rgba(186, 113, 113, 0.444);
+
 }
 
 .card-score{
-    color: red;
-    font-size: 200%;
+    color: rgb(219, 180, 62);
+    font-size: 130%;
     font-weight: 900;
 
+
+}
+
+.img-flex{
+    padding:20px;
+}
+
+#score, #target, #win, #lose{
+    font-size: 150%;
+    font-weight: 900;
+  
+    
 }
 /* Hover functionality Section*/
-.navbar-brand:hover{
-    color: #5050a9;
+
+#nav-brand:hover{
+    color: #6e6ef0;
+    cursor: pointer;
+    transition: .0s;
+    transform: none;
 }
 
 .home-btn:hover {
-    background-color: #5050a9;
-    box-shadow: 1px 3px 20px 3px #3d3d95;
+    color: var(--main-color);
+    border-color: var(--main-color);
 }
 
-.card:hover {
-    color: #7d0feb;
-    font-size: 120%;
-    transform: scale(1.1);
+.card:hover{
+    cursor: pointer;
+  
+    
 }
+
 /* Screen size adjustment*/
 
+#modal{
+    background-color: #3d3d95;
+}
 @media (max-width: 1490px ) {
     .brand-main-screen{
         font-size: 50px;
@@ -117,4 +155,22 @@ footer{
     footer{
         margin-top: 300px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .home-btn:hover {
+        background-color: #0b090b;
+        color: #ae41d6;
+        border-color: #ae41d6;
+    }
+    
+    .card:hover {
+        color: #7d0feb;
+        font-size: 120%;
+        transform: translateY(-30px);
+    }
+}
+
+@media screen and ( max-width:480px) {
+    
 }

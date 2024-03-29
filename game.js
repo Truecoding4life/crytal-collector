@@ -7,10 +7,14 @@ let winCounter = 0;
 let loseCounter = 0;
 
 $("#start").on("click", () => {
-  console.log("Clicked");
+  console.log("Game Started Enjoy !!");
   $("#WelcomeMode").hide();
   $("#GameMode").removeAttr("hidden");
 });
+
+$('#nav-brand').on('click', ()=>{
+  window.location.reload()
+})
 
 const getRandom = (num) => {
   return Math.floor(Math.random() * num);
@@ -26,17 +30,27 @@ $(document).ready(function () {
 });
 
 $(".card").on("click", function () {
+  $('#click').html('')
+  $('#lose-display').html('')
+  $('#win-display').html('')
+
   const cardScore = $(this).find(".card-score");
   const getScore = getRandom(10);
+  const targetScore = $('#target').text()
   cardScore.html(getScore);
   scoreCounter += getScore;
+  $('#score-display').html(`You just got  ${getScore}   point !! total score ${scoreCounter}, Target score ${targetScore} `)
   $("#score").html(scoreCounter);
-  const targetScore = $('#target').text()
 if (targetScore < scoreCounter ) {
-    userLost();
+  $('#score-display').html('')
+  $('#lose-display').html(`You Lost ${scoreCounter} your score gone over ${targetScore}, try to beat this score now `)
+  userLost();
     reset()
   }
-  if (getTargetScore === scoreCounter) {
+  if (targetScore == scoreCounter) {
+    $('#score-display').html('')
+    $('#win-display').html(`You won !!!! Your scored ${scoreCounter} to ${targetScore}`)
+
     userWon();
     reset()
   }
@@ -59,5 +73,5 @@ function reset() {
   let newTargetScore = getRandom(40);
   $("#target").html(newTargetScore);
   scoreCounter = 0;
-  $("#score").html(scoreCounter);
+  $("#score").html(0);
 }
