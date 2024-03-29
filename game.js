@@ -1,15 +1,20 @@
+let localData = JSON.parse(localStorage.getItem('crystalQ')) ;
 let star1Value;
 let star2Value;
 let star3Value;
 let star4Value;
 let scoreCounter = 0;
-let winCounter = 0;
-let loseCounter = 0;
+let winCounter = localData.win || 0 ;
+let loseCounter = localData.lose || 0;
 
+console.log(localData.win);
+console.log(localData.lose);
 $("#start").on("click", () => {
   console.log("Game Started Enjoy !!");
   $("#WelcomeMode").hide();
   $("#GameMode").removeAttr("hidden");
+  $('#win').html(winCounter);
+  $('#lose').html(loseCounter)
 });
 
 $('#nav-brand').on('click', ()=>{
@@ -59,12 +64,14 @@ if (targetScore < scoreCounter ) {
 
 function userWon() {
   winCounter += 1;
+  localStorage.setItem('crystalQ', JSON.stringify({win: winCounter, lose: loseCounter}))
   $("#win").html(winCounter);
   
 }
 
 function userLost() {
   loseCounter += 1;
+  localStorage.setItem('crystalQ',  JSON.stringify({ win: winCounter , lose : loseCounter}))
   $("#lose").html(loseCounter);
   
 }
@@ -75,3 +82,4 @@ function reset() {
   scoreCounter = 0;
   $("#score").html(0);
 }
+

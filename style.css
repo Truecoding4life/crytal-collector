@@ -39,8 +39,8 @@
 
 }
 footer{
-    color: rgba(124, 132, 224, 0.78);
-    background-color: #101042de;
+    color: rgba(179, 179, 215, 0.942);
+    background-color: #5757bfde;
     padding: 30px;
 }
 
@@ -91,6 +91,11 @@ footer{
 
 .img-flex{
     padding:20px;
+}
+
+.helper-text{
+    margin-top: 10%;
+    color: #3f3e3e;
 }
 
 #score, #target, #win, #lose{
