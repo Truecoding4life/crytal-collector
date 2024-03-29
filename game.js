@@ -4,8 +4,8 @@ let star2Value;
 let star3Value;
 let star4Value;
 let scoreCounter = 0;
-let winCounter = localData.win || 0 ;
-let loseCounter = localData.lose || 0;
+let winCounter = localData?.win || 0 ;
+let loseCounter = localData?.lose || 0;
 
 $('#instruction').on('click', ()=>{
   $('#instructions').removeAttr('hidden')
