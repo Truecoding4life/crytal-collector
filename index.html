@@ -12,12 +12,9 @@
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="/assets/star/logo1.png">
     <title>Crystal Quest</title>
 </head>
@@ -36,19 +33,43 @@
 
     <main style="flex: 1;">
         <div class="container">
-            <div id="WelcomeMode">
+            <div class="row">
+
+         
+            <div id="WelcomeMode" >
                 <div class="col-12 text-center home-btn-group ">
                     <div class="col-12 p-3">
-                        <button type="button" id="start" class="btn home-btn col-12 animate__animated animate__bounceIn">Get Started</button>
+                        <button type="button" 
+                            class="btn home-btn col-12 animate__animated animate__bounceIn start">Get Started</button>
                     </div>
                     <div class="col-12 p-3">
                         <button type="button" data-toggle="modal" data-target="#modal" id="instruction"
                             class="btn home-btn col-12 animate__animated animate__bounceIn">Instruction</button>
                     </div>
                     <div class="col-12 p-3">
-                        <button type="button" id="about" class="btn home-btn col-12 animate__animated animate__bounceIn">About Us</button>
+                        <button type="button" id="about"
+                            class="btn home-btn col-12 animate__animated animate__bounceIn">About Us</button>
                     </div>
                 </div>
+            </div>
+            <div id="instructions" hidden="'true">
+                <div class=" col-12 d-flex justify-content-center">
+
+                
+            
+                <div class="instruction-card">
+                    <h1>Instruction</h1>
+                    <p>There will be four crystals for you to pick .</p>
+                    <p>You won't know their value until clicked.</p>
+                    <p> Your Job is to make sure that your score not go over the target
+                    </p>
+                    <p> If you score equal to the target score you win else you lose and your score will be save for
+                        later.
+                    </p>
+                    <button class="btn start" id="quickStart" type="button" > Get Started</button>
+                </div>
+                
+            </div>
             </div>
 
             <div class="container justify-content-center" id="GameMode" style="min-height: 700px; margin-top: 30px;"
@@ -73,15 +94,19 @@
                 </div>
                 <div class="row score-text">
                     <div class="col-12 col-sm-12">
-                      
-                        <div id="score-display" > <h4 id="click" class=" animate__animated animate__fadeInUp animate__delay-1s">  Click a Crystal to get started</h4>  </div>
-                       
+
+                        <div id="score-display">
+                            <h4 id="click" class=" animate__animated animate__fadeInUp animate__delay-1s"> Click a
+                                Crystal to get started</h4>
+                        </div>
+
                     </div>
 
                 </div>
                 <div class="row text-center game">
-                   
-                    <div class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn  ">
+
+                    <div
+                        class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn  ">
                         <div class="card  " style="width: 16.5rem; background-color: transparent; ;">
                             <img src="/assets/star/_9919eb98-4dd9-4bf8-8d08-42878b788966 Background Removed.png"
                                 class="img-flex" alt="...">
@@ -92,7 +117,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn ">
+                    <div
+                        class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn ">
                         <div class="card  " style="width: 17rem; background-color: transparent;;">
                             <img src="/assets/star/_057c92d0-41bb-463b-80ac-cd5e9530dc09 Background Removed.png"
                                 class="img-flex" alt="...">
@@ -103,7 +129,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn  ">
+                    <div
+                        class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn  ">
                         <div class="card " style="width: 18rem; background-color: transparent; ;">
                             <img src="/assets/star/_49862b52-9c58-4071-9ad8-370a9b483157 Background Removed.png"
                                 class="img-flex" alt="...">
@@ -114,7 +141,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn ">
+                    <div
+                        class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn ">
                         <div class="card  " style="width: 18rem; background-color: transparent;; ">
                             <img src="/assets/star/_7021ca78-fc71-450e-b4b8-3a28ce9ac11e Background Removed.png"
                                 class="img-flex" alt="...">
@@ -134,6 +162,7 @@
                 </div>
             </div>
         </div>
+        </div>
 
 
     </main>
@@ -142,12 +171,14 @@
         <div class="container text-center">
             <h5>Developed By JStudio</h5>
             <div class="text-center">
-                <a href="https://jstudio.tech"> <i class="bi bi-link-45deg" style="font-size: larger; margin: 5px;"></i></a>
-            <a href="https://www.linkedin.com/in/thai-nghiem-319292267/
+                <a href="https://jstudio.tech"> <i class="bi bi-link-45deg"
+                        style="font-size: larger; margin: 5px;"></i></a>
+                <a href="https://www.linkedin.com/in/thai-nghiem-319292267/
             "> <i class="bi bi-linkedin" style="font-size: larger; margin: 5px;"></i></a>
-            <a href="https://github.com/Truecoding4life/crytal-quest"><i class="bi bi-github" style="font-size: larger; margin: 5px;"></i></a>
-           
-</div>
+                <a href="https://github.com/Truecoding4life/crytal-quest"><i class="bi bi-github"
+                        style="font-size: larger; margin: 5px;"></i></a>
+
+            </div>
 
         </div>
     </footer>

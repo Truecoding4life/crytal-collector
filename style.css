@@ -50,7 +50,7 @@ footer{
 }
 
 footer a {
-    color: var(--main-color);
+    color: rgba(221, 221, 221, 0.357);
 
 }
 
@@ -69,7 +69,7 @@ footer a {
 }
 
 #GameMode{
-    font-family: "Roboto Mono";
+    font-family: "Roboto Mono", sans-serif;
     font-weight: 400;
     color: var(--main-color);
 
@@ -78,7 +78,7 @@ footer a {
 .scoreboard{
     border-color: var(--main-color);
     border-bottom: 5px solid var(--main-color);
-    color: rgb(136, 131, 212);
+    color: rgb(182, 125, 223);
 
 }
 
@@ -141,8 +141,28 @@ footer a {
     
 }
 
+
+.instruction-card{
+    background-color: #a971c3;
+    color: #1f1a1a;
+    font-size: large;    
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: ease-in;
+    margin-top: 10%;
+
+    
+
+    
+}
 /* Screen size adjustment*/
 
+#quickStart{
+    background-color: #141117fc;
+    color: rgb(204, 202, 202);
+    width: 100%;
+}
 #modal{
     background-color: #3d3d95;
 }

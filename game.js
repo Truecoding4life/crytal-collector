@@ -7,11 +7,15 @@ let scoreCounter = 0;
 let winCounter = localData.win || 0 ;
 let loseCounter = localData.lose || 0;
 
-console.log(localData.win);
-console.log(localData.lose);
-$("#start").on("click", () => {
+$('#instruction').on('click', ()=>{
+  $('#instructions').removeAttr('hidden')
+  $("#WelcomeMode").hide();
+})
+
+$(".start").on("click", () => {
   console.log("Game Started Enjoy !!");
   $("#WelcomeMode").hide();
+  $("#instructions").hide();
   $("#GameMode").removeAttr("hidden");
   $('#win').html(winCounter);
   $('#lose').html(loseCounter)
