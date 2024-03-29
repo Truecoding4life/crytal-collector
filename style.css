@@ -28,7 +28,7 @@
 #score-display{
     font-size: 100%;
     font-weight: 900;
-   color:#cc3de9;
+   color:#824396;
    background-color: #27272f87;
    padding: 20px;
    border-radius: 20px;
@@ -78,7 +78,7 @@ footer a {
 .scoreboard{
     border-color: var(--main-color);
     border-bottom: 5px solid var(--main-color);
-    color: rgb(182, 125, 223);
+    color: rgb(134, 224, 134);
 
 }
 
@@ -143,14 +143,15 @@ footer a {
 
 
 .instruction-card{
-    background-color: #a971c3;
-    color: #1f1a1a;
+    background-color: #a44acd65;
+    color: #e8e8e8;
     font-size: large;    
     padding: 10px;
     border-radius: 10px;
     display: block;
     transition: ease-in;
     margin-top: 10%;
+    font-family: "Roboto Mono";
 
     
 
@@ -159,13 +160,11 @@ footer a {
 /* Screen size adjustment*/
 
 #quickStart{
-    background-color: #141117fc;
+    background-color: #28133cfc;
     color: rgb(204, 202, 202);
     width: 100%;
 }
-#modal{
-    background-color: #3d3d95;
-}
+
 @media (max-width: 1490px ) {
     .brand-main-screen{
         font-size: 50px;
