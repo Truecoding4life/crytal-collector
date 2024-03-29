@@ -13,7 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
         <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="/assets/star/logo1.png">
     <title>Crystal Quest</title>
@@ -25,7 +28,7 @@
         <div class="container-fluid">
             <div class="navbar d-flex">
                 <div class="navbar-brand text-center mx-auto">
-                    <h1 id="nav-brand" class="brand-main-screen">Crystal Quest</h1>
+                    <h1 id="nav-brand" class="brand-main-screen animate__animated animate__bounceIn">Crystal Quest</h1>
                 </div>
             </div>
         </div>
@@ -34,16 +37,16 @@
     <main style="flex: 1;">
         <div class="container">
             <div id="WelcomeMode">
-                <div class="col-12 text-center home-btn-group">
+                <div class="col-12 text-center home-btn-group ">
                     <div class="col-12 p-3">
-                        <button type="button" id="start" class="btn home-btn col-12">Get Started</button>
+                        <button type="button" id="start" class="btn home-btn col-12 animate__animated animate__bounceIn">Get Started</button>
                     </div>
                     <div class="col-12 p-3">
                         <button type="button" data-toggle="modal" data-target="#modal" id="instruction"
-                            class="btn home-btn col-12">Instruction</button>
+                            class="btn home-btn col-12 animate__animated animate__bounceIn">Instruction</button>
                     </div>
                     <div class="col-12 p-3">
-                        <button type="button" id="about" class="btn home-btn col-12">About Us</button>
+                        <button type="button" id="about" class="btn home-btn col-12 animate__animated animate__bounceIn">About Us</button>
                     </div>
                 </div>
             </div>
@@ -68,57 +71,56 @@
                         <p id="lose">0</p>
                     </div>
                 </div>
-                <div class="row text-center p-5">
+                <div class="row score-text">
                     <div class="col-12 col-sm-12">
-                        <h4 id="click" class="p-3"> Click a Crystal </h4>
-                        <h4 id="score-display">  </h4>
-                        <h4 id="lose-display">  </h4>
-                        <h4 id="win-display">  </h4>
+                      
+                        <div id="score-display" > <h4 id="click" class=" animate__animated animate__fadeInUp animate__delay-1s">  Click a Crystal to get started</h4>  </div>
+                       
                     </div>
 
                 </div>
                 <div class="row text-center game">
                    
-                    <div class="col-6 col-sm-3 col-md-3 d-flex justify-content-center  ">
+                    <div class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn  ">
                         <div class="card  " style="width: 16.5rem; background-color: transparent; ;">
                             <img src="/assets/star/_9919eb98-4dd9-4bf8-8d08-42878b788966 Background Removed.png"
                                 class="img-flex" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title"> Larimar </h5>
-                                <p class="card-text">Score <i id="star1" class="card-score"></i> </p>
+                                <p class="card-title"> Larimar </p>
+                                <p class="card-text"><i id="star1" class="card-score"></i> </p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3 col-md-3 d-flex justify-content-center ">
+                    <div class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn ">
                         <div class="card  " style="width: 17rem; background-color: transparent;;">
                             <img src="/assets/star/_057c92d0-41bb-463b-80ac-cd5e9530dc09 Background Removed.png"
                                 class="img-flex" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kyanite</h5>
-                                <p class="card-text">Score <i id="star2" class="card-score"></i> </p>
+                                <p class="card-title">Kyanite</p>
+                                <p class="card-text"> <i id="star2" class="card-score"></i> </p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3 col-md-3 d-flex justify-content-center  ">
+                    <div class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn  ">
                         <div class="card " style="width: 18rem; background-color: transparent; ;">
                             <img src="/assets/star/_49862b52-9c58-4071-9ad8-370a9b483157 Background Removed.png"
                                 class="img-flex" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Kryptonite</h5>
-                                <p class="card-text">Score <i id="star3" class="card-score"></i> </p>
+                                <p class="card-title">Kryptonite</p>
+                                <p class="card-text"> <i id="star3" class="card-score "></i> </p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-3 col-md-3 d-flex justify-content-center ">
+                    <div class="col-6 col-sm-6 col-md-3 d-flex justify-content-center animate__animated animate__bounceIn ">
                         <div class="card  " style="width: 18rem; background-color: transparent;; ">
                             <img src="/assets/star/_7021ca78-fc71-450e-b4b8-3a28ce9ac11e Background Removed.png"
                                 class="img-flex" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">Amethyst</h5>
-                                <p class="card-text">Score <i id="star4" class="card-score"></i> </p>
+                                <p class="card-title">Amethyst</p>
+                                <p class="card-text"> <i id="star4" class="card-score"></i> </p>
 
                             </div>
                         </div>
@@ -137,9 +139,16 @@
     </main>
 
     <footer>
-        <div class="container-fluid">
-            <h5>Design By JStudio</h5>
-            <h5>EST 2024, From California</h5>
+        <div class="container text-center">
+            <h5>Developed By JStudio</h5>
+            <div class="text-center">
+                <a href="https://jstudio.tech"> <i class="bi bi-link-45deg" style="font-size: larger; margin: 5px;"></i></a>
+            <a href="https://www.linkedin.com/in/thai-nghiem-319292267/
+            "> <i class="bi bi-linkedin" style="font-size: larger; margin: 5px;"></i></a>
+            <a href="https://github.com/Truecoding4life/crytal-quest"><i class="bi bi-github" style="font-size: larger; margin: 5px;"></i></a>
+           
+</div>
+
         </div>
     </footer>
 

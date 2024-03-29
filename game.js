@@ -36,25 +36,29 @@ $(document).ready(function () {
 
 $(".card").on("click", function () {
   $('#click').html('')
-  $('#lose-display').html('')
-  $('#win-display').html('')
 
   const cardScore = $(this).find(".card-score");
   const getScore = getRandom(10);
   const targetScore = $('#target').text()
   cardScore.html(getScore);
   scoreCounter += getScore;
-  $('#score-display').html(`You just got  ${getScore}   point !! total score ${scoreCounter}, Target score ${targetScore} `)
+  $('#score-display').children().remove()
+  let message = getScore !== 0 ? `You just got  ${getScore}  point!! total  ${scoreCounter}, must hit ${targetScore}` : "Lucky number 0";
+
+  $('#score-display').append(`<p class="animate__animated animate__fadeIn">${message} </p>`)
   $("#score").html(scoreCounter);
 if (targetScore < scoreCounter ) {
-  $('#score-display').html('')
-  $('#lose-display').html(`You Lost ${scoreCounter} your score gone over ${targetScore}, try to beat this score now `)
+  $('#score-display').children().remove()
+
+  $('#score-display').append(`<p id='lose-text' class="animate__animated animate__fadeIn">You Lost  your score ${scoreCounter} gone over ${targetScore}, try again  </p>`)
+
   userLost();
     reset()
   }
   if (targetScore == scoreCounter) {
-    $('#score-display').html('')
-    $('#win-display').html(`You won !!!! Your scored ${scoreCounter} to ${targetScore}`)
+    $('#score-display').children().remove()
+
+  $('#score-display').append(`<p id='win-text' class="animate__animated animate__fadeIn">You won !!!! Your scored ${scoreCounter} to ${targetScore} </p>`)
 
     userWon();
     reset()

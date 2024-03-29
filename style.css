@@ -3,8 +3,9 @@
 }
 
 
+
 .main{
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(11, 8, 14, 0.986);
 ;
    
 }
@@ -25,23 +26,32 @@
 }
 
 #score-display{
-    font-size: 150%;
+    font-size: 100%;
     font-weight: 900;
-   color:#f1d05c
+   color:#cc3de9;
+   background-color: #27272f87;
+   padding: 20px;
+   border-radius: 20px;
+   margin: 10px;
 }
 
-#lose-display{
-    color: #eb4455;
+#lose-text{
+    color: #ea3b4d;
 }
 
-#win-display{
+#win-text{
     color: #3ae09e;
 
 }
 footer{
-    color: rgba(179, 179, 215, 0.942);
-    background-color: #5757bfde;
+    color: rgba(107, 107, 183, 0.708);
+    background-color: #20203fee;
     padding: 30px;
+}
+
+footer a {
+    color: var(--main-color);
+
 }
 
 .home-btn{
@@ -72,19 +82,26 @@ footer{
 
 }
 
+.score-text{
+    padding: 10px;
+   
+}
+
 .card{
     color: var(--main-color);
     transition: 1s;
     border-radius: 20px;
     border: 5px solid var(--main-color);
-    box-shadow: 0 0 10px 5px rgba(186, 113, 113, 0.444);
+    box-shadow: 0 0 10px 5px rgba(186, 113, 113, 0.252);
+    margin: 10px;
 
 }
 
 .card-score{
-    color: rgb(219, 180, 62);
-    font-size: 130%;
+    color: rgb(142, 225, 117);
+    font-size: 200%;
     font-weight: 900;
+    padding-bottom: 20px;
 
 
 }
@@ -139,7 +156,10 @@ footer{
 
 /* Phone Screen */
 
-@media (max-width: 790px ) {
+@media (max-width: 990px ) {
+    .card-title{
+        font-size: 10px;
+    }
     .brand-main-screen{
         font-size: 30px;
     }
@@ -148,10 +168,7 @@ footer{
         font-size: 70%
     }
 
-    .scoreboard{
-        border-width: 5px;
-        font-size: 70%;
-    }
+   
 
     .scoreboard h4{
         font-size: 80%;
@@ -177,5 +194,13 @@ footer{
 }
 
 @media screen and ( max-width:480px) {
+    #score-display{
+        font-size: 100%;
+        padding-top: 0;
+    }
+
+    .score-text{
+        padding: 0;
+    }
     
 }
